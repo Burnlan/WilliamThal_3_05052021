@@ -1,0 +1,19 @@
+{
+  "name": "williamthal_3_05052021",
+  "version": "1.0.0",
+  "description": "WilliamThal_3_05052021",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Burnlan/WilliamThal_3_05052021.git"
+  },
+  "author": "William THAL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Burnlan/WilliamThal_3_05052021/issues"
+  },
+  "homepage": "https://github.com/Burnlan/WilliamThal_3_05052021#readme"
+}
