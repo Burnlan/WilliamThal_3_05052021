@@ -1,6 +1,9 @@
 $logo-font-family: 'Shrikhand', cursive;
 $text-font-family: 'Roboto', sans-serif;
 
+.logo {
+    font-family: $logo-font-family;
+}
 
 h1 {
     font-weight: 900;

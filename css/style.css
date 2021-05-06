@@ -40,6 +40,10 @@ table {
   border-spacing: 0;
 }
 
+.logo {
+  font-family: "Shrikhand", cursive;
+}
+
 h1 {
   font-weight: 900;
   font-size: 2.3em;
@@ -72,7 +76,6 @@ header {
   position: relative;
 }
 header .logo {
-  font-family: "Shrikhand", cursive;
   font-size: 2.5em;
 }
 
@@ -89,7 +92,7 @@ header .logo {
 }
 
 .explainer {
-  padding: 50px 25px 50px 25px;
+  padding: 50px 25px 70px 25px;
 }
 .explainer h1 {
   font-family: "Roboto", sans-serif;
@@ -97,7 +100,7 @@ header .logo {
 
 .restaurants {
   background-color: #F6F6F6;
-  padding: 50px 25px 50px 25px;
+  padding: 50px 25px 70px 25px;
 }
 .restaurants h1 {
   font-family: "Roboto", sans-serif;
@@ -139,6 +142,36 @@ header .logo {
 }
 .restaurants .btn-like {
   margin-right: 15px;
+}
+
+.footer {
+  background-color: #353535;
+  padding: 50px 25px 70px 25px;
+  padding-top: 40px;
+  color: white;
+}
+.footer .logo {
+  font-size: 1.4em;
+}
+.footer ul {
+  margin-top: 25px;
+  font-size: 1.1em;
+  font-family: "Roboto", sans-serif;
+}
+.footer ul i {
+  margin-right: 10px;
+}
+.footer ul li {
+  padding: 7px 0px 7px 0px;
+}
+.footer ul a {
+  text-decoration: none;
+}
+.footer ul a:visited {
+  color: white;
+}
+.footer ul a:link {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

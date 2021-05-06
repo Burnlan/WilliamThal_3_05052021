@@ -1,0 +1,30 @@
+
+.footer {
+    background-color: $lightblack;
+    padding: $std-padding;
+    padding-top: 40px;
+    color: white;
+    .logo {
+        font-size: 1.4em;
+    }
+    ul {
+        margin-top: 25px;
+        font-size: 1.1em;
+        font-family: $text-font-family;
+        i {
+            margin-right: 10px;
+        }
+        li {
+            padding: 7px 0px 7px 0px;
+        }
+        a {
+            text-decoration: none;
+            &:visited {
+                color: white;
+            }
+            &:link {
+                color: white;
+            }
+        }
+    }
+}
