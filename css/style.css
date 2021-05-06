@@ -88,9 +88,16 @@ header .logo {
   margin: 30px 0px 30px 0px;
 }
 
+.explainer {
+  padding: 50px 25px 50px 25px;
+}
+.explainer h1 {
+  font-family: "Roboto", sans-serif;
+}
+
 .restaurants {
   background-color: #F6F6F6;
-  padding: 50px 20px 50px 20px;
+  padding: 50px 25px 50px 25px;
 }
 .restaurants h1 {
   font-family: "Roboto", sans-serif;

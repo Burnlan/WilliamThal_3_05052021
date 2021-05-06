@@ -2,7 +2,7 @@ $prev_height: 350px;
 
 .restaurants {
     background-color: $lightgray;
-    padding: 50px 20px 50px 20px;
+    padding: $std-padding;
     h1 {
         font-family: $text-font-family;
         margin-bottom: 10px;
