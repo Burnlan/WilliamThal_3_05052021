@@ -32,7 +32,19 @@
 
 .btn-like {
     background-color: rgba(255, 255, 255, 0);
-    //border-style: none;
+    border-style: none;
     font-size: 1.8em;
-    padding: 0px 25px 0px 25px;
+    width: 70px;
+    position: relative;
+    i {
+        position: absolute;
+        top: 5%;
+        left: 25%;
+    }
+    &:not(:hover) .fas {
+        display: none;
+    }
+    &:hover {
+        cursor: pointer;
+    }
 }

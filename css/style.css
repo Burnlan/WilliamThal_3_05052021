@@ -98,8 +98,21 @@ h2 {
 
 .btn-like {
   background-color: rgba(255, 255, 255, 0);
+  border-style: none;
   font-size: 1.8em;
-  padding: 0px 25px 0px 25px;
+  width: 70px;
+  position: relative;
+}
+.btn-like i {
+  position: absolute;
+  top: 5%;
+  left: 25%;
+}
+.btn-like:not(:hover) .fas {
+  display: none;
+}
+.btn-like:hover {
+  cursor: pointer;
 }
 
 .container {
