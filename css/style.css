@@ -57,15 +57,20 @@ h2 {
   width: 100%;
   background-color: #EAEAEA;
   border: 0px;
-  padding: 15px 0px 15px 0px;
+  padding: 20px 0px 20px 0px;
   text-align: center;
   font-family: "Roboto", sans-serif;
   color: #353535;
   font-weight: 700;
   font-size: 1.1em;
 }
-.geosearch:focus {
-  outline-color: #9356DC;
+.geosearch i {
+  padding: 0px 15px 0px 15px;
+  margin-left: -30px;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .btn {
@@ -92,9 +97,6 @@ h2 {
   padding-right: 25px;
   color: #7e7e7e;
 }
-.btn:hover {
-  cursor: pointer;
-}
 
 .btn-like {
   background-color: rgba(255, 255, 255, 0);
@@ -110,9 +112,6 @@ h2 {
 }
 .btn-like:not(:hover) .fas {
   display: none;
-}
-.btn-like:hover {
-  cursor: pointer;
 }
 
 .container {

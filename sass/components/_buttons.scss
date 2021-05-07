@@ -1,4 +1,8 @@
-
+button {
+    &:hover {
+        cursor: pointer;
+    }
+}
 
 .btn {
     font-family: $text-font-family;
@@ -24,10 +28,6 @@
             color: $darkgray;
         }
     }
-    &:hover {
-        cursor: pointer;
-    }
-
 }
 
 .btn-like {
@@ -44,7 +44,5 @@
     &:not(:hover) .fas {
         display: none;
     }
-    &:hover {
-        cursor: pointer;
-    }
+
 }
