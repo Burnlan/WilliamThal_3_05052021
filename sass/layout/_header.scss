@@ -8,4 +8,13 @@ header {
     .logo {
         font-size: 2.5em;
     }
+    .btn-back {
+        @include inlineButton;
+        @include noStyleLink($lightblack);
+        font-size: 1.6em;
+        position: absolute;
+        left: 30px;
+        top: 30px;
+    }
 }
+

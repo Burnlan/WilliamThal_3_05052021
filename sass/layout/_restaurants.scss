@@ -19,14 +19,7 @@ $prev_height: 350px;
         justify-content: space-between;
         @include shadow;
         position: relative;
-        text-decoration: none;
-        &:visited {
-            color: black;
-        }
-        &:link {
-            color: black;
-        }
-        
+        @include noStyleLink(black);
     }
     .img__restaurant {
         width: 100%;

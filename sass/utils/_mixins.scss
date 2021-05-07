@@ -38,3 +38,18 @@
         top: $y;
     }
 }
+
+@mixin inlineButton {
+    background-color: rgba(255, 255, 255, 0);
+    border-style: none;
+}
+
+@mixin noStyleLink($color) {
+    text-decoration: none;
+    &:link {
+        color: $color;
+    }
+    &:visited {
+        color: $color;
+    }
+}

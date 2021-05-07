@@ -31,8 +31,7 @@ button {
 }
 
 .btn-like {
-    background-color: rgba(255, 255, 255, 0);
-    border-style: none;
+    @include inlineButton;
     font-size: 1.8em;
     width: 70px;
     position: relative;
