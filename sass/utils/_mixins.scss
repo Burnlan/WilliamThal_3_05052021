@@ -1,3 +1,23 @@
 @mixin shadow {
-    box-shadow: 0px 8px 37px 10px rgba(137,137,137,0.42);
+    box-shadow: 0px 8px 10px 5px rgba(137,137,137,0.25);
+}
+
+@mixin linearGradient($col1, $col2) {
+    background: linear-gradient(-5deg, $col1, $col2);
+}
+
+@mixin numberBtn($number) {
+    &::before {
+        content: "#{$number}";
+        border-radius: 100px;
+        font-family: $text-font-family;
+        font-size: 0.7em;
+        font-weight: 400;
+        text-align: center;
+        color: white;
+        background-color: $clr-primary;
+        padding: 8px 10px 2px 10px;
+        position: absolute;
+        left: 10px;
+    }
 }

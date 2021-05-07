@@ -1,11 +1,33 @@
 
 
 .btn {
-
-    &__explorer {
+    font-family: $text-font-family;
+    font-size: 1.3em;
+    @include shadow;
+    border-style: none;
+    &__action {
+        border-radius: 50px;
+        color: white;
+        @include linearGradient($clr-primary, $clr-secondary);
+        padding: 20px 30px 20px 30px;
         
     }
     &__explainer {
-
+        border-radius: 20px;
+        margin-top: 20px; 
+        font-weight: 700;
+        padding: 30px;
+        width: 90%;
+        text-align: start;
+        @include numberBtn(1);
+        i {
+            padding-right: 25px;
+            color: $darkgray;
+        }
+        
     }
+    &:hover {
+        cursor: pointer;
+    }
+
 }
