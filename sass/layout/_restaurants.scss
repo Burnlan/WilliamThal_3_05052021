@@ -8,11 +8,6 @@ $newOffset: $prev_height - 110px;
         font-family: $text-font-family;
         margin-bottom: 10px;
     }
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
     .prev__restaurants {
         width: 100%;
         height: $prev_height;

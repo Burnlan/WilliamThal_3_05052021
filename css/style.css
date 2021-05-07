@@ -84,8 +84,8 @@ h2 {
   border-radius: 20px;
   margin-top: 20px;
   font-weight: 700;
-  padding: 30px;
-  width: 90%;
+  padding: 30px 30px 30px 10px;
+  width: 95%;
   text-align: start;
 }
 .btn__explainer::before {
@@ -98,8 +98,8 @@ h2 {
   color: white;
   background-color: #9356DC;
   padding: 8px 10px 2px 10px;
-  position: absolute;
-  left: 10px;
+  position: relative;
+  left: -25px;
 }
 .btn__explainer i {
   padding-right: 25px;
@@ -107,6 +107,12 @@ h2 {
 }
 .btn:hover {
   cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 header {
@@ -146,11 +152,6 @@ header .logo {
 .restaurants h1 {
   font-family: "Roboto", sans-serif;
   margin-bottom: 10px;
-}
-.restaurants .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
 }
 .restaurants .prev__restaurants {
   width: 100%;
