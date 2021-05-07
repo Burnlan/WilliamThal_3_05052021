@@ -1,0 +1,23 @@
+.menu {
+    background-color: $gray;
+    padding: 30px 20px 30px 20px;    
+    border-radius: 40px;
+    position: relative;
+    justify-content: space-between;
+    h1 {
+        font-family: $logo-font-family;
+        font-size: 1.4;
+        margin-bottom: 35px;
+    }
+    h2 {
+        font-family: $text-font-family;
+        font-size: 1.6;
+        font-weight: 400;
+        text-transform: uppercase;
+        @include underline($clr-tertiary);
+        margin-bottom: 15px;
+    }
+    .submenu__menu {
+        position: relative;
+    }
+}
