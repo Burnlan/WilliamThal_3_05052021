@@ -21,3 +21,20 @@
         left: 10px;
     }
 }
+
+@mixin new($color, $x, $y) {
+    &::before {
+        content: "Nouveau";
+        background-color: $color;
+        border-radius: 5px;
+        padding: 10px 20px 10px 20px;
+        font-family: $text-font-family;
+        font-size: 1em;
+        font-weight: 600;
+        text-align: center;
+        color: darken($color, 40%);
+        position: relative;
+        left: $x;
+        top: $y;
+    }
+}
