@@ -5,4 +5,10 @@
         font-family: $text-font-family;
         margin-bottom: 10px;
     }
+    @for $i from 1 through 10 {
+        button:nth-of-type(#{$i}) {
+            @include numberBtn($i);
+        }
+    }
+    
 }
