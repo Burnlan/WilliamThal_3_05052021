@@ -1,5 +1,4 @@
 $prev_height: 350px;
-$newOffset: $prev_height - 110px;
 
 .restaurants {
     background-color: $lightgray;
@@ -19,7 +18,7 @@ $newOffset: $prev_height - 110px;
         flex-wrap: wrap;
         justify-content: space-between;
         @include shadow;
-        
+        position: relative;
     }
     .img__restaurant {
         width: 100%;
@@ -38,7 +37,7 @@ $newOffset: $prev_height - 110px;
             margin-top: 10px;
         }
         &--new {
-            @include new($clr-tertiary, 165%, -$newOffset);
+            @include new($clr-tertiary, 72%, 5%);
         }
     }
     .btn-like {
