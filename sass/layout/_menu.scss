@@ -4,6 +4,7 @@
     border-radius: 40px;
     position: relative;
     justify-content: space-between;
+
     h1 {
         font-family: $logo-font-family;
         font-size: 1.4;
@@ -11,11 +12,11 @@
     }
     h2 {
         font-family: $text-font-family;
-        font-size: 1.6;
+        font-size: 1.2em;
         font-weight: 400;
         text-transform: uppercase;
         @include underline($clr-tertiary);
-        margin-bottom: 15px;
+        margin-bottom: 25px;
     }
     .submenu__menu {
         position: relative;

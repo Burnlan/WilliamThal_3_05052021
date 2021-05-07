@@ -104,6 +104,22 @@ button:hover {
   padding: 10px;
   width: 100%;
   margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn__menu h3 {
+  font-size: 1.1em;
+  font-weight: 700;
+  width: 100%;
+}
+.btn__menu p {
+  font-size: 0.9em;
+  color: #7e7e7e;
+}
+.btn__menu .price__menu {
+  font-weight: 700;
+  font-size: 0.9em;
+  align-self: flex-end;
 }
 
 .btn-like {
@@ -400,6 +416,7 @@ header .btn-back:visited {
 
 .restaurant-pic {
   width: 100%;
+  margin-bottom: -70px;
 }
 
 .menu {
@@ -416,10 +433,10 @@ header .btn-back:visited {
 }
 .menu h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 1.6;
+  font-size: 1.2em;
   font-weight: 400;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 .menu h2::after {
   content: "";
@@ -428,7 +445,7 @@ header .btn-back:visited {
   background-color: #99E2D0;
   position: absolute;
   left: 0%;
-  bottom: 93%;
+  bottom: 90%;
 }
 .menu .submenu__menu {
   position: relative;
