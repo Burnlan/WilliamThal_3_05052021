@@ -301,6 +301,13 @@ header .logo {
   justify-content: space-between;
   box-shadow: 0px 8px 10px 5px rgba(137, 137, 137, 0.25);
   position: relative;
+  text-decoration: none;
+}
+.restaurants .prev__restaurants:visited {
+  color: black;
+}
+.restaurants .prev__restaurants:link {
+  color: black;
 }
 .restaurants .img__restaurant {
   width: 100%;

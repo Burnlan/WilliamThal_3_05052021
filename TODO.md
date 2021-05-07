@@ -5,3 +5,4 @@ Needs fixing :
 Needs doing :
 - Animations
 - Other pages
+- Create mixin for :hover on buttons and previews
