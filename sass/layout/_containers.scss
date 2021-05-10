@@ -2,4 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    &--resp{
+        @media (max-width: $breakpoint){
+            width: 100%;
+        }
+        @media (min-width: $breakpoint){
+            width: 80%;
+            max-width: 800px;
+        }
+    }
 }

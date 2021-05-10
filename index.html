@@ -3,7 +3,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <title>ohmyfood</title>
     <meta name="description" content="frontapage of ohmyfood">
     <link rel="stylesheet" href="./css/style.css">
@@ -26,16 +26,19 @@
     <button class="btn btn__action">Explorer nos restaurants</button>
 </div>
 
-<div class="explainer">
+<div class="explainer container">
+    <div class="container--resp">
     <h1>Fonctionnement</h1>
-    <div class="container">
-        <button class="btn btn__explainer"><i class="fas fa-mobile-alt fa-fw"></i>Choisissez un restaurant</button>
-        <button class="btn btn__explainer"><i class="fas fa-list-ul fa-fw"></i>Composez votre menu</button>
-        <button class="btn btn__explainer"><i class="fas fa-store fa-fw"></i>Dégustez au restaurant</button>
+        <div class="container">
+            <button class="btn btn__explainer"><i class="fas fa-mobile-alt fa-fw"></i>Choisissez un restaurant</button>
+            <button class="btn btn__explainer"><i class="fas fa-list-ul fa-fw"></i>Composez votre menu</button>
+            <button class="btn btn__explainer"><i class="fas fa-store fa-fw"></i>Dégustez au restaurant</button>
+        </div>
     </div>
 </div>
 
-<div class="restaurants">
+<div class="restaurants container">
+    <div class="container--resp">
     <h1>Restaurants</h1>
     <div class="container">
     <a class="prev__restaurants" href="restaurants/lapalettedugout.html">
@@ -71,9 +74,11 @@
         <button class="btn-like"><i class="far fa-heart"></i><i class="fas fa-heart"></i></button>
     </a>
     </div>
+    </div>
 </div>
 
-<div class="footer">
+<div class="footer container">
+    <div class="container--resp">
     <span class="logo">ohmyfood</span>
     <ul>
         <li><i class="fas fa-utensils fa-fw"></i><a href="">Proposer un restaurant</a></li>
@@ -81,6 +86,7 @@
         <li><a href="">Mentions légales</a></li>
         <li><a href="contact@ohmyfood.com">Contact</a></li>
     </ul>
+    </div>
 </div>
 
 </body>
