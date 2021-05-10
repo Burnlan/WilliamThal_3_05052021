@@ -424,6 +424,9 @@ header .btn-back:visited {
 .restaurant-pic {
   width: 100%;
   margin-bottom: -70px;
+  max-height: 370px;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 .menu {
@@ -438,6 +441,7 @@ header .btn-back:visited {
   font-size: 1.4;
   margin-bottom: 35px;
   flex-grow: 1;
+  max-width: 80%;
 }
 .menu h2 {
   font-family: "Roboto", sans-serif;
