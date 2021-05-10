@@ -457,7 +457,7 @@ header .btn-back:visited {
   background-color: #99E2D0;
   position: absolute;
   left: 0%;
-  bottom: 90%;
+  top: 25px;
 }
 .menu .submenu__menu {
   position: relative;
