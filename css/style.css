@@ -462,6 +462,7 @@ header .btn-back:visited {
 .menu .submenu__menu {
   position: relative;
   margin-bottom: 50px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
