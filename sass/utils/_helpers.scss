@@ -1,0 +1,8 @@
+.flex-centered {
+    &::before {
+        content: "";
+    }
+    &::after {
+        content: "";
+    }
+}

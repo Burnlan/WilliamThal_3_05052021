@@ -6,3 +6,4 @@ Needs doing :
 - Animations
 - Other pages
 - Create mixin for :hover on buttons and previews
+- Have the site be usable on dektop and tablets

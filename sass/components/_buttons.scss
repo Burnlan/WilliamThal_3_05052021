@@ -14,7 +14,7 @@ button {
         color: white;
         @include linearGradient($clr-primary, $clr-secondary);
         padding: 20px 30px 20px 30px;
-        
+        min-width: 50%;
     }
     &__explainer {
         border-radius: 20px;
@@ -37,19 +37,23 @@ button {
         margin-top: 15px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         h3 {
             font-size: 1.1em;
             font-weight: 700;
             width: 100%;
+            margin-bottom: 5px;
         }
         p {
             font-size: 0.9em;
             color: $darkgray;
+            max-width: 80%;
+            @include textEllipsis;
         }
         .price__menu {
             font-weight: 700;
             font-size: 0.9em;
-            align-self: flex-end;
+            padding: 0px 10px 0px 10px;
         }
     }
 }
