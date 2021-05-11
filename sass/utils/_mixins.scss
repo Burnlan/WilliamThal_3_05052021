@@ -96,3 +96,27 @@
         }
     }
 }
+
+@mixin showUpdelayed($delay) {
+    animation: showUp 1s ease-in-out $delay*0.1s 1 normal backwards;
+}
+
+@mixin showUpMoredelayed($delay) {
+    animation: showUp 1s ease-in-out $delay*0.2s+0.5s 1 normal backwards;
+}
+
+@keyframes showUp{
+    0%{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    10%{
+        transform: translateY(30px);
+        opacity: 0.2;
+        animation-timing-function: ease-out;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

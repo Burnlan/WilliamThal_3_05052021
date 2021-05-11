@@ -4,6 +4,11 @@
     border-radius: 40px 40px 0px 0px;
     position: relative;
     justify-content: center;
+    @for $i from 1 through 10 {
+        .submenu__menu:nth-child(#{$i}) {
+            @include showUpdelayed($i);
+        }
+    } 
     h1 {
         font-family: $logo-font-family;
         font-size: 1.4;
@@ -23,5 +28,10 @@
         position: relative;
         margin-bottom: 50px;
         width: 100%;
+        @for $i from 1 through 10 {
+            button:nth-of-type(#{$i}) {
+                @include showUpMoredelayed($i);
+            }
+        }    
     }
 }
