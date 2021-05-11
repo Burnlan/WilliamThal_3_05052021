@@ -36,29 +36,56 @@
         border-radius: 10px;
         background-color: white;
         text-align: start;
-        padding: 10px;
         width: 100%; 
         margin-top: 15px;
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
-        h3 {
-            font-size: 1.1em;
-            font-weight: 700;
-            width: 100%;
-            margin-bottom: 5px;
+        overflow: hidden;
+        .info {
+            padding: 15px;
+            flex: 1 1 auto;
+            display: flex;
+            flex-wrap: wrap;
+            h3 {
+                font-size: 1.1em;
+                font-weight: 700;
+                width: 100%;
+                margin-bottom: 5px;
+                @include textEllipsis;
+            }
+            p {
+                font-size: 0.85em;
+                color: $darkgray;
+                max-width: 80%;
+                flex-grow: 1;
+                @include textEllipsis;
+            }
+            .price__menu {
+                font-weight: 700;
+                font-size: 0.9em;
+                padding: 0px 10px 0px 10px;
+                flex-grow: 1;
+                text-align: end;
+            }    
         }
-        p {
-            font-size: 0.9em;
-            color: $darkgray;
-            max-width: 80%;
-            @include textEllipsis;
+        &--checked{
+            background-color: $clr-tertiary;
+            align-self: stretch;
+            width: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            transition: width 0.4s ease-in-out;    
+            font-size: 1.3em;
         }
-        .price__menu {
-            font-weight: 700;
-            font-size: 0.9em;
-            padding: 0px 10px 0px 10px;
+        &:hover &--checked{
+            width: 100px;
+            i{
+                animation: rotate 0.3s ease-in-out 0s 1 normal both;
+            }
         }
+    
     }
     
 }
@@ -114,3 +141,11 @@
     }
 }
 
+@keyframes rotate{
+    from{
+        transform: rotate(-360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
