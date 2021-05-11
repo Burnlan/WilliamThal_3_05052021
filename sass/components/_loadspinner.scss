@@ -27,7 +27,7 @@
         content: "oh";
         position: absolute;
         background: radial-gradient($clr-secondary, $clr-primary);
-        -webkit-background-clip: text;
+        background-clip: text;
         color: transparent;
         display: flex;
         justify-content: center;

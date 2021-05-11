@@ -5,4 +5,5 @@ Needs fixing :
 Needs doing :
 - Animations
 - Create mixin for :hover on buttons and previews
-- Create loader
+
+!!! Remove all prefixs and run prefixer before final version

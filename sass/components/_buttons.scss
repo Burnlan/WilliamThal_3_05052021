@@ -58,14 +58,45 @@
     font-size: 1.8em;
     width: 70px;
     position: relative;
-    color: $darkgray;
+    color: $lightblack;
     i {
         position: absolute;
         top: 5%;
         left: 25%;
     }
-    &:not(:hover) .fas {
-        display: none;
+    .fas {
+        transform: scale(0);
+        background: linear-gradient(68deg, $clr-primary, $clr-secondary);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    &:hover{
+        cursor: pointer;
+    }
+    &:hover .fas{
+        animation: growIn 0.4s ease-in-out 0s 1 normal both;
+    }
+    &:hover .far{
+        animation: shrinkOut 0.4s ease-in-out 0s 1 normal both;
     }
 
+}
+
+@keyframes growIn{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes shrinkOut{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0);
+        opacity: 0;
+    }
 }
