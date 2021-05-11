@@ -148,6 +148,9 @@ h2 {
 .loadspinner {
   position: fixed;
   display: flex;
+  /* only for work*/
+  display: none;
+  /* only for work*/
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;

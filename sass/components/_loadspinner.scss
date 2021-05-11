@@ -1,6 +1,9 @@
 .loadspinner {
     position: fixed;
     display: flex;
+    /* only for work*/
+    display: none;
+    /* only for work*/
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -10,7 +13,7 @@
     z-index: 999999;
     font-family: $logo-font-family;
     font-size: 3em;
-    //uniquement pour la maquette : fait apapraitre et disparaitre le loader indépendamment du chargement serveur
+    //uniquement pour la maquette : fait apparaître et disparaitre le loader indépendamment du chargement serveur
     animation: disappear 4s ease-in 0s 1 normal both;
     &::before{
         content: "";
