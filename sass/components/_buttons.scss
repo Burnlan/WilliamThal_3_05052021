@@ -2,6 +2,7 @@
     font-family: $text-font-family;
     font-size: 1.3em;
     border-style: none;
+    position: relative;
     @include shadow;
     @include hoverButton;
     &__action {
@@ -21,6 +22,14 @@
         i {
             padding-right: 25px;
             color: $darkgray;
+            
+        }
+        &:hover{
+            background-color: $clr-primary-light;
+            i {
+                color: $clr-primary;
+                transition: all 0.3s ease-in-out;
+            }    
         }
     }
     &__menu {
@@ -51,6 +60,7 @@
             padding: 0px 10px 0px 10px;
         }
     }
+    
 }
 
 .btn-like {
@@ -66,7 +76,7 @@
     }
     .fas {
         transform: scale(0);
-        background: linear-gradient(68deg, $clr-primary, $clr-secondary);
+        @include linearGradient($clr-primary, $clr-secondary);
         -webkit-background-clip: text;
         color: transparent;
     }

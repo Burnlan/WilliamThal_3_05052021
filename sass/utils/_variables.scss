@@ -6,6 +6,8 @@ $lightgray: #F6F6F6;
 $gray: #EAEAEA;
 $darkgray: #7e7e7e;
 $lightblack: #353535;
+$clr-primary-light: lighten($clr-primary, 35);
+$clr-secondary-light: lighten($clr-secondary, 30);
 
 //layout
 $std-padding: 50px 25px 70px 25px;

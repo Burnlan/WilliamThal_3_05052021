@@ -2,6 +2,16 @@
     box-shadow: 0px 8px 10px 5px rgba(137,137,137,0.25);
 }
 
+@mixin overlay{
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
 @mixin linearGradient($col1, $col2) {
     background: linear-gradient(-5deg, $col1, $col2);
 }
@@ -73,7 +83,16 @@
 }
 
 @mixin hoverButton {
+    &::after{
+        @include overlay;
+        @include shadow;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
     &:hover{
         cursor: pointer;
+        &::after{
+            opacity: 1;
+        }
     }
 }
