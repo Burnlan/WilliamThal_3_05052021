@@ -1,12 +1,9 @@
-button {
-    @include hoverButton;
-}
-
 .btn {
     font-family: $text-font-family;
     font-size: 1.3em;
-    @include shadow;
     border-style: none;
+    @include shadow;
+    @include hoverButton;
     &__action {
         border-radius: 50px;
         color: white;

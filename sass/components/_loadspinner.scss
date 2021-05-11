@@ -1,0 +1,69 @@
+.loadspinner {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(252, 255, 255, 0.8);
+    z-index: 999999;
+    font-family: $logo-font-family;
+    font-size: 3em;
+    //uniquement pour la maquette : fait apapraitre et disparaitre le loader indépendamment du chargement serveur
+    animation: disappear 4s ease-in 0s 1 normal both;
+    &::before{
+        content: "";
+        width: 150px;
+        height: 150px;
+        border-radius: 150px;
+        border-top: solid 5px $clr-tertiary;
+        border-bottom: solid 5px $clr-tertiary;
+    }
+    &::after{
+        content: "oh";
+        position: absolute;
+        background: radial-gradient($clr-secondary, $clr-primary);
+        -webkit-background-clip: text;
+        color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: spinner 3.5s ease-in-out 1s 2 normal backwards;
+    }
+}
+
+@keyframes spinner{
+    0%, 100%{
+        content: "oh";
+    }
+    20%{
+        transform: rotate(3turn);
+        content: "my";
+    }
+    40%{
+        transform: rotate(3turn);
+        content: "my";
+    }
+    60%{
+        transform: rotate(6turn);
+        content: "food";
+    }
+    80%{
+        transform: rotate(6turn);
+        content: "food";
+    }
+
+
+}
+
+@keyframes disappear{
+    0%, 99%{
+        opacity: 100%;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0%;
+        transform: scale(0);
+    }
+}
