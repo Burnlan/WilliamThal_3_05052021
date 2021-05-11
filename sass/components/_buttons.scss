@@ -43,9 +43,10 @@
         overflow: hidden;
         .info {
             padding: 15px;
-            flex: 1 1 auto;
             display: flex;
             flex-wrap: wrap;
+            flex: 1 10 auto;
+            width: 50%;
             h3 {
                 font-size: 1.1em;
                 font-weight: 700;
@@ -56,16 +57,16 @@
             p {
                 font-size: 0.85em;
                 color: $darkgray;
-                max-width: 80%;
-                flex-grow: 1;
                 @include textEllipsis;
+                flex: 0 2 auto;
+                max-width: 80%;
             }
-            .price__menu {
+            .price__menu{
                 font-weight: 700;
                 font-size: 0.9em;
                 padding: 0px 10px 0px 10px;
-                flex-grow: 1;
                 text-align: end;
+                flex: 1 1 auto;
             }    
         }
         &--checked{
@@ -80,7 +81,7 @@
             font-size: 1.3em;
         }
         &:hover &--checked{
-            width: 100px;
+            width: 80px;
             i{
                 animation: rotate 0.3s ease-in-out 0s 1 normal both;
             }
