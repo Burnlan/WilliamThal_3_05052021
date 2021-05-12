@@ -2,6 +2,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    &--title{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
     &--resp{
         @media (max-width: $breakpoint){
             width: 100%;
