@@ -107,7 +107,7 @@
     .fas {
         transform: scale(0);
         @include linearGradient($clr-primary, $clr-secondary);
-        -webkit-background-clip: text;
+        background-clip: text;
         color: transparent;
     }
     &:hover{
