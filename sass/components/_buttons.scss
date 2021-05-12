@@ -1,6 +1,6 @@
 .btn {
     font-family: $text-font-family;
-    font-size: 1.3em;
+    font-size: 1.2rem;
     border-style: none;
     position: relative;
     @include shadow;
@@ -16,7 +16,7 @@
         border-radius: 20px;
         margin-top: 30px; 
         font-weight: 700;
-        padding: 30px 30px 30px 10px;
+        padding: 30px 0px 30px 0px;
         width: 95%;
         text-align: start;
         i {
@@ -48,22 +48,22 @@
             flex: 1 10 auto;
             width: 50%;
             h3 {
-                font-size: 1.1em;
+                font-size: 1.3rem;
                 font-weight: 700;
                 width: 100%;
                 margin-bottom: 5px;
                 @include textEllipsis;
             }
             p {
-                font-size: 0.85em;
+                font-size: 1.1rem;
                 color: $darkgray;
                 @include textEllipsis;
                 flex: 0 2 auto;
-                max-width: 80%;
+                max-width: 75%;
             }
             .price__menu{
                 font-weight: 700;
-                font-size: 0.9em;
+                font-size: 1.2rem;
                 padding: 0px 10px 0px 10px;
                 text-align: end;
                 flex: 1 1 auto;
@@ -81,7 +81,7 @@
             font-size: 1.3em;
         }
         &:hover &--checked{
-            width: 80px;
+            width: 5rem;
             i{
                 animation: rotate 0.3s ease-in-out 0s 1 normal both;
             }
@@ -93,7 +93,7 @@
 
 .btn-like {
     @include inlineButton;
-    font-size: 1.8em;
+    font-size: 1.8rem;
     width: 70px;
     position: relative;
     color: $lightblack;

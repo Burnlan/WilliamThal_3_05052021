@@ -11,9 +11,9 @@
     } 
     h1 {
         font-family: $logo-font-family;
-        font-size: 1.4;
+        font-size: 1.8em;
         margin-bottom: 35px;
-        flex-grow: 1;
+        flex: 1 2 auto;
         max-width: 80%;
     }
     h2 {
