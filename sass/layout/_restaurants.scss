@@ -38,7 +38,7 @@ $prev_height: 350px;
             margin-top: 10px;
         }
         &--new {
-            @include new($clr-tertiary, 72%, 5%);
+            @include new($clr-tertiary, 5%, 5%);
         }
     }
     .btn-like {

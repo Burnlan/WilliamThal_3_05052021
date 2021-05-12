@@ -44,7 +44,7 @@
         text-align: center;
         color: darken($color, 40%);
         position: absolute;
-        left: $x;
+        right: $x;
         top: $y;
     }
 }
