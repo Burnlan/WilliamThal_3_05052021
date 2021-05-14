@@ -106,9 +106,7 @@
     }
     .fas {
         transform: scale(0);
-        @include linearGradient($clr-primary, $clr-secondary);
-        background-clip: text;
-        color: transparent;
+        color: $clr-secondary;
     }
     &:hover{
         cursor: pointer;
