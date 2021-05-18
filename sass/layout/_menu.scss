@@ -16,9 +16,7 @@
         flex: 1 2 auto;
     }
     h2 {
-        font-family: $text-font-family;
-        font-size: 1.2em;
-        font-weight: 400;
+        @extend %mediumRegular;
         text-transform: uppercase;
         @include underline($clr-tertiary);
         margin-bottom: 25px;

@@ -30,10 +30,10 @@ $prev_height: 350px;
         font-family: $text-font-family;
         margin-left: 15px;
         h2 {
-            font-size: 1.4em;
+            @extend %largeBlack;
         }
         p {
-            font-size: 1.4em;
+            @extend %largeRegular;
             color: $lightblack;
             margin-top: 10px;
         }

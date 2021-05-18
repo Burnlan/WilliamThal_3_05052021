@@ -1,7 +1,17 @@
+
 $logo-font-family: 'Shrikhand', cursive;
 $text-font-family: 'Roboto', sans-serif;
 $base-norm-font-size: 16px; 
 $base-small-font-size: 13px;
+
+$smallFont: 1.0rem;
+$mediumFont: 1.2rem;
+$largeFont: 1.4rem;
+$xlargeFont: 2.1rem;
+
+$regularFont: 400;
+$boldFont: 700;
+$blackFont: 900;
 
 @media (max-width: 400px) {
     html{
@@ -14,15 +24,52 @@ $base-small-font-size: 13px;
     }
 }
 
+%smallRegular {
+    font-family: $text-font-family;
+    font-size: $smallFont;
+    font-weight: $regularFont;
+}
+
+%smallBold {
+    font-family: $text-font-family;
+    font-size: $smallFont;
+    font-weight: $boldFont;
+}
+
+%mediumRegular {
+    font-family: $text-font-family;
+    font-size: $mediumFont;
+    font-weight: $regularFont;
+}
+
+%mediumBold {
+    font-family: $text-font-family;
+    font-size: $mediumFont;
+    font-weight: $boldFont;
+}
+
+%largeRegular {
+    font-family: $text-font-family;
+    font-size: $largeFont;
+    font-weight: $regularFont;
+}
+
+%largeBlack{
+    font-family: $text-font-family;
+    font-size: $largeFont;
+    font-weight: $blackFont;
+}
+
+%xlargeBlack {
+    font-family: $text-font-family;
+    font-size: $xlargeFont;
+    font-weight: $blackFont;
+}
+
 .logo {
     font-family: $logo-font-family;
 }
 
 h1 {
-    font-weight: 900;
-    font-size: 2.1rem;
-}
-
-h2 {
-    font-weight: 900;
+    @extend %xlargeBlack;
 }

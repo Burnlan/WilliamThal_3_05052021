@@ -1,11 +1,10 @@
 .btn {
-    font-family: $text-font-family;
-    font-size: 1.2rem;
     border-style: none;
     position: relative;
     @include shadow;
     @include hoverButton;
     &__action {
+        @extend %mediumRegular;
         border-radius: 50px;
         color: white;
         @include linearGradient($clr-primary, $clr-secondary);
@@ -18,9 +17,9 @@
         }
     }
     &__explainer {
+        @extend %mediumBold;
         border-radius: 20px;
         margin-top: 30px; 
-        font-weight: 700;
         padding: 2rem 0px 2rem 0px;
         width: 95%;
         text-align: start;
@@ -53,15 +52,14 @@
             flex: 1 10 auto;
             width: 50%;
             h3 {
-                font-size: 1.3rem;
-                font-weight: 700;
+                @extend %mediumBold;
                 width: 100%;
                 margin-bottom: 5px;
                 @include textEllipsis;
                 overflow: hidden;
             }
             p {
-                font-size: 1.1rem;
+                @extend %smallRegular;
                 color: $darkgray;
                 @include textEllipsis;
                 flex: 0 2 auto;
@@ -69,8 +67,7 @@
                 overflow: hidden;
             }
             .price__menu{
-                font-weight: 700;
-                font-size: 1.2rem;
+                @extend %mediumBold;
                 padding: 0px 0.5rem 0px 0px;
                 text-align: end;
                 flex: 1 1 auto;
