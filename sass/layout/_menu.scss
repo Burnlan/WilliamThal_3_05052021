@@ -26,7 +26,7 @@
         margin-bottom: 50px;
         width: 100%;
         @for $i from 1 through 10 {
-            button:nth-of-type(#{$i}) {
+            .btn:nth-child(#{$i}) {
                 @include showUpMoredelayed($i);
             }
         }    
