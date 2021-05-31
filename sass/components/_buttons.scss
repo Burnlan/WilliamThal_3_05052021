@@ -12,11 +12,9 @@
         min-width: 50%;
         text-align: center;
         transition: all 0.3s ease-in-out;
-        /* lighten background of button
         &:hover {
             @include linearGradient(lighten($clr-primary, 2), lighten($clr-secondary, 5));
         }
-        */
     }
     &__explainer {
         @extend %mediumBold;
